@@ -39,8 +39,12 @@ public class DataMain {
 
         //실수 타입: 소수점 이하를 표기하기 위해서 사용하는 실수 타입이고, 근사치 계산법
         float tax = 30.0000f; //32비트
-        double taxLong = 30.0000; //64비트
-
+        double taxLong = 30.0000; //
+        double num = 0.1;
+        for(int i = 0; i < 1000; i++) {
+            num += 0.1;
+        }
+        System.out.println(num);
 
 
     }
