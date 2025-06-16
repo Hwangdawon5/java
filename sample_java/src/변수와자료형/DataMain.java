@@ -41,10 +41,13 @@ public class DataMain {
         float tax = 30.0000f; //32비트
         double taxLong = 30.0000; //
         double num = 0.1;
-        for(int i = 0; i < 1000; i++) {
+        for(int i = 1; i < 1000; i++) {
             num += 0.1;
         }
         System.out.println(num);
+
+        String addr = "경기도 성남시 분당구" ;
+        System.out.println(addr);
 
 
     }
