@@ -46,8 +46,12 @@ public class DataMain {
         }
         System.out.println(num);
 
-        String addr = "경기도 성남시 분당구" ;
+        String addr = "경기도 성남시 분당구" ; //참조 타입이므로 문자열의 길이는 상관 없음
         System.out.println(addr);
+
+        // 상수란? 한 번 값이 결정되면 변경되지 않음, 관례상 대문자로 작성
+        final double TAXRATE = 0.10;
+        TAXRATE = 0.09;
 
 
     }
