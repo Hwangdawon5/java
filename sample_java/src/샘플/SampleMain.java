@@ -1,4 +1,4 @@
-package sample;
+package 샘플;
 
 /*
 이건 범위 주석 입니다.
@@ -16,7 +16,9 @@ public class SampleMain {
         System.out.println('M'); //문자를 의미
         System.out.println("M"); //문자열을 의미
         System.out.println(100+200); //정수 (연산이 가능한 소수점 이하가 없는 숫자)
-        System.out.println(100+200+"200");
+        System.out.println(100+200+"200"); //결합 순서에 따라 결과가 달라짐
+        System.out.println("100"+200+200);
+        System.out.println(3.141578994944949);
         //ctrl누르고 shift옆에 있는 / 누르면 주석 처리
     }
 }
