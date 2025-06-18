@@ -4,7 +4,7 @@ package 연산자;
 //대입 연산자 : = (우변 값을 좌변에 대입), +=, -=, *=, /=, %= (복합 대입 연산자)
 //증감 연산자 : ++, --, 단항 연산자라고 함
 //비교 연산자 : >, <, >=, <=, ==(같다), !=(같지 않다)
-//논리 연산자 : //(or, A이거나 B)
+//논리 연산자 : ||(or, A이거나 B), &&(AND), !(NOT)
 //비트 연산자 : 비트 단위로 연산
 //3항 연산자 : 항이 3개인 연산자로 참과 거짓만 있는 조건문을 만듬
 
@@ -47,6 +47,11 @@ public class OperateMain {
         System.out.println(x != y); //true
         System.out.println(x >= y); //false
         System.out.println(x <= y); //true
+
+        //논리 연산자 : &&(AND), ||(OR), !(NOT)
+        System.out.println(x > 0 && x > y); //false, 둘다 만족해야 함
+        System.out.println(x > 0 || x > y); //true, 둘 중 하나만 만족하면 참
+        System.out.println(!(x > 0 || x > y)); //false, 현재 상태에 대한 부정
 
     }
 }
