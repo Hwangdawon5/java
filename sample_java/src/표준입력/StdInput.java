@@ -18,6 +18,7 @@ public class StdInput {
         Scanner sc = new Scanner(System.in);
         System.out.print("이름을 입력: ");
         String name = sc.next(); //공백 기준으로 문자열을 입력 받음
+        sc.nextLine(); // 버퍼 지우기
         System.out.print("주소를 입력 ");
         String addr = sc.nextLine(); //줄 바꿈 문자가 들어 올 때 까지 입력 받음
         System.out.print("성별을 입력: ");
