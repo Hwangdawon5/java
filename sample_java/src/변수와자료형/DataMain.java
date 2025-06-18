@@ -1,4 +1,7 @@
 package 변수와자료형;
+
+import java.util.Scanner;
+
 //변수란? 메모리 공간에 이름을 붙이는 것, 자바는 JVM이 메모리를 할당
 //변수를 만들기 위해서는 어떤 데이터를 저장할 지 결정해야 하고,
 //변수 이름은 사용 목적에 맍게 작명 해야 함
@@ -51,7 +54,13 @@ public class DataMain {
 
         // 상수란? 한 번 값이 결정되면 변경되지 않음, 관례상 대문자로 작성
         final double TAXRATE = 0.10;
-        TAXRATE = 0.09;
+
+        final double TAX_RATE = 0.10; //세율을 10%로 고정, 상수이므로 변경 불가
+        Scanner sc = new Scanner(System.in); //스캐너 객체로 키보드 입력을 받음
+        System.out.print("수입을 입력하세요 : ");
+        int income = sc.nextInt(); //스캐너를 통해서 정수값을 입력받아 income 변수에 대입
+        System.out.println("당신이 내야 할 세금은 "+income * TAX_RATE);
+
 
 
     }
